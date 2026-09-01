@@ -1,0 +1,26 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "Aplicación de demostración para aprender Cypress",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "testing",
+    "demo",
+    "e2e"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "cypress": "^15.7.0"
+  }
+}

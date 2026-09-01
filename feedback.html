@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Mensaje Enviado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">TechSolutions</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="feedback-section">
+            <div class="success-icon">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="#4CAF50" opacity="0.2"/>
+                    <path d="M9 12l2 2 4-4" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="10" stroke="#4CAF50" stroke-width="2"/>
+                </svg>
+            </div>
+            <h2>¡Formulario Enviado Exitosamente!</h2>
+            <p class="success-message">
+                Gracias por contactarnos. Hemos recibido su mensaje y nos pondremos en contacto con usted pronto.
+            </p>
+            <div class="feedback-info" id="feedbackInfo">
+                <!-- La información del formulario se mostrará aquí mediante JavaScript -->
+            </div>
+            <div class="feedback-actions">
+                <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+                <a href="contact.html" class="btn btn-secondary">Enviar Otro Mensaje</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechSolutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="feedback.js"></script>
+</body>
+</html>

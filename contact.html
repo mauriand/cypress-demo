@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">TechSolutions</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <h2>Formulario de Contacto</h2>
+            <p class="subtitle">Complete el formulario y nos pondremos en contacto con usted</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Nombre completo <span class="required">*</span></label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required
+                        minlength="3"
+                        placeholder="Ingrese su nombre completo"
+                    >
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                        placeholder="ejemplo@correo.com"
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        pattern="[0-9+\-\s()]+"
+                        placeholder="+54 11 1234-5678"
+                    >
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Asunto <span class="required">*</span></label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Seleccione un asunto</option>
+                        <option value="consulta">Consulta General</option>
+                        <option value="soporte">Soporte Técnico</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <span class="error-message" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje <span class="required">*</span></label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        required
+                        minlength="10"
+                        rows="5"
+                        placeholder="Escriba su mensaje aquí (mínimo 10 caracteres)"
+                    ></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>Acepto los términos y condiciones <span class="required">*</span></span>
+                    </label>
+                    <span class="error-message" id="termsError"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechSolutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+# Dependencias
+node_modules/
+jspm_packages/
+
+# Archivos de entorno y credenciales
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# Carpetas de compilación / build
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Logs y depuración
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caché y temporales
+.npm
+.eslintcache
+.cache
+.node_repl_history
+
+# Pruebas y cobertura
+coverage/
+.nyc_output/
+
+# Archivos del SO y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
